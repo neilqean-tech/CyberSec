@@ -2,42 +2,109 @@
 
 ## 📥 Installation
 
-To download Nmap, visit the official website:
-
-👉 https://nmap.org/download.html
-
-### Steps:
-
-1. Go to the link above
-2. Choose your operating system (Windows, Linux, macOS)
-3. Download the installer
-4. Run the installer and follow the setup instructions
+Download Nmap from the official website:
+https://nmap.org/download.html
 
 ---
 
-## 🧠 What is Nmap?
+##  More Command
 
-Nmap is a network scanning tool used to discover hosts and services on a network.
+Refer to this website:
+https://www.stationx.net/nmap-cheat-sheet/
 
 ---
 
-## ⚙️ Basic Usage (example)
+## 🚀 Basic Usage
+
+### 1. Check if Nmap is installed
 
 ```bash
-nmap 192.168.1.1
+nmap --version
 ```
-
-This scans a target IP to see open ports and services.
 
 ---
 
-## 📚 What I learned
+### 2. Get your IP address
 
-* How to install Nmap
-* Basic network scanning
-* Understanding open ports
+```bash
+ipconfig
+```
+
+---
+
+### 3. Scan your network
+
+```bash
+nmap -sn 192.168.1.0/24
+```
+
+* Scans all devices connected to your network
+
+---
+
+### 4. Scan a specific IP
+
+```bash
+nmap -sS 192.168.1.1
+```
+
+* Scans open ports on a target
+
+---
+
+### 5. Detect operating system
+
+```bash
+nmap -O 192.168.1.1
+```
+
+* Tries to guess the OS of the target
+
+---
+
+### 6. Detect service versions
+
+```bash
+nmap -sV 192.168.1.1
+```
+
+* Shows versions of services running on open ports
+
+---
+
+### 7. UDP scan
+
+```bash
+nmap -sU 192.168.1.1
+```
+
+* Scans UDP ports
+
+---
+
+### 8. Run scripts (example)
+
+```bash
+nmap --script=http-headers nmap.org
+```
+
+* Displays HTTP header information
+
+---
+
+## 🧠 What I Learned
+
+* How to scan my network
+* How to find open ports
+* How to detect OS and services
+* Basic Nmap commands
+
+---
+
+## ⚠️ Important
+
+Only scan networks and systems you own or have permission to test.
 
 ---
 
 ⭐ More notes coming as I learn deeper.
-
