@@ -14,7 +14,7 @@ This method required you to use google dork, nmap and sql injection functioanlit
 11. check for its vulnerabilities
 12. exploit it
 13. //
-14. Do the sql injection by putting "'" or "'1" in the url
+14. Do the sql injection by putting " ' " or " '1 " in the url
 15. Successful sql injection should be like this:
 <img width="917" height="240" alt="image" src="https://github.com/user-attachments/assets/f82fa65b-62b6-4f7f-8060-1184812b70b3" />
 
